@@ -1,0 +1,25 @@
+html {
+  font-size: calc(100vw / 1440 * 16);
+  overscroll-behavior: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  @include media("<=phone") {
+    font-size: calc(100vw / 550 * 16);
+    line-height: 1;
+  }
+
+  @include media("<=375px") {
+    font-size: calc(100vw / 375 * 16);
+  }
+}
+
+// resets
+body {
+  font-family: $font-suisse-bp;
+  font-weight: 400;
+  font-size: toRem(22);
+  min-height: 100vh;
+  background: $beige;
+  color: $white;
+}

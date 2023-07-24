@@ -1,0 +1,59 @@
+.c-button {
+  @extend %description-18;
+  display: inline-block;
+  background: transparent;
+  color: $white;
+  text-transform: uppercase;
+  padding: 5px 8px;
+  border: 2px solid $white;
+  border-radius: 45px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &--big {
+    padding: 20px 48px;
+    font-size: toRem(30);
+  }
+
+  &:hover {
+    @media (any-pointer: fine) {
+      border-color: $white;
+      color: $red;
+      background: $white;
+      font-weight: 600;
+    }
+  }
+
+  .c-link {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &__inner {
+      display: flex;
+      transform: translateY(0);
+      transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      margin-right: 2px;
+    }
+
+    &__animated {
+      position: absolute;
+      top: 100%;
+      display: none;
+
+      @media (any-pointer: fine) {
+        display: inline-block;
+      }
+    }
+  }
+
+  &:hover {
+    @media (any-pointer: fine) {
+      .c-link__inner {
+        transform: translateY(-100%);
+      }
+    }
+  }
+}

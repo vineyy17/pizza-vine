@@ -1,0 +1,33 @@
+@import "../../styles/main.scss";
+
+%padding-h-feature {
+  padding-left: toRem(90);
+  padding-right: 0;
+  padding-top: toRem(176);
+}
+
+.hero {
+  background-color: $red;
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  justify-content: center;
+
+  &__feature {
+    @extend %padding-h-feature;
+
+    &__header {
+      @extend %title-100;
+    }
+
+    &__paragraph {
+      margin-top: toRem(25);
+      max-width: 70%;
+    }
+
+    &__button {
+      margin-top: toRem(20);
+    }
+  }
+}
