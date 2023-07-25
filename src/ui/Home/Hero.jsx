@@ -5,10 +5,10 @@ function Hero() {
     <div className="hero">
       <div className="hero__feature">
         <div className="hero__feature__wrapper">
-          <h1 className="hero__feature__header">
+          <h1 className="hero__feature__header" data-animation="header">
             PIZZA PERFECTION YOU'LL CRAVE
           </h1>
-          <p className="hero__feature__paragraph">
+          <p className="hero__feature__paragraph" data-animation="paragraph">
             Irresistible crust. Mouthwatering toppings. Savory indulgence in
             every bite.
           </p>
@@ -26,7 +26,13 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero__photo"></div>
+      <div className="hero__photo">
+        <img
+          className="hero__photo__img"
+          src="../../../public/images/delicious-italian-food-removebg-preview.png"
+          alt="hero pizza"
+        />
+      </div>
     </div>
   );
 }

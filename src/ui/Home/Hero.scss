@@ -11,11 +11,20 @@
   height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   justify-content: center;
+
+  @include media("<=tablet") {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
 
   &__feature {
     @extend %padding-h-feature;
+
+    @include media("<=tablet") {
+      padding-left: 0;
+      padding-top: toRem(88);
+    }
 
     &__header {
       @extend %title-100;
@@ -24,10 +33,43 @@
     &__paragraph {
       margin-top: toRem(25);
       max-width: 70%;
+      line-height: 1.3;
+
+      @include media("<=tablet") {
+        max-width: 100%;
+      }
     }
 
     &__button {
       margin-top: toRem(20);
+    }
+  }
+
+  &__photo {
+    display: grid;
+    justify-content: center;
+    align-items: start;
+
+    @include media("<=tablet") {
+      justify-content: center;
+    }
+
+    &__img {
+      display: block;
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 100%;
+
+      @include media("<=tablet") {
+        max-width: 80%;
+        max-height: 80%;
+        justify-self: center;
+      }
+
+      @include media(">=LGdesktop") {
+        width: 100%;
+        height: 80%;
+      }
     }
   }
 }
