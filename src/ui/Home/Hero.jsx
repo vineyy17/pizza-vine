@@ -1,4 +1,6 @@
 import "./Hero.scss";
+import LogoSlider from "../LogoSlider/LogoSlider";
+import companyData from "../../data/companyData";
 
 function Hero() {
   return (
@@ -29,9 +31,13 @@ function Hero() {
       <div className="hero__photo">
         <img
           className="hero__photo__img"
-          src="../../../public/images/delicious-italian-food-removebg-preview.png"
+          src="../../../public/images/hero/delicious-italian-food-removebg-preview.png"
           alt="hero pizza"
         />
+      </div>
+
+      <div className="hero__slider">
+        <LogoSlider companyContents={companyData} />
       </div>
     </div>
   );

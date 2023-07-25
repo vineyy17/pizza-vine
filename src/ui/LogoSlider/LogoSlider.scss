@@ -1,0 +1,27 @@
+@import "../../styles/main.scss";
+
+.logos {
+  display: flex;
+  height: 2.5rem;
+  overflow: hidden;
+  margin-top: 10rem;
+
+  @include media("<=tablet") {
+    margin-top: 5rem;
+  }
+
+  &__slide {
+    display: flex;
+    white-space: nowrap;
+  }
+
+  &__item {
+    flex: 0 0 auto;
+    margin: 0 30px;
+
+    &__image {
+      max-width: 100%;
+      max-height: 2.5rem;
+    }
+  }
+}

@@ -8,9 +8,10 @@
 
 .hero {
   background-color: $red;
-  height: 100dvh;
+  height: 130vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, min-content);
   justify-content: center;
 
   @include media("<=tablet") {
@@ -45,10 +46,15 @@
     }
   }
 
+  &__slider {
+    grid-column: 1 / -1;
+  }
+
   &__photo {
     display: grid;
     justify-content: center;
     align-items: start;
+    overflow: hidden;
 
     @include media("<=tablet") {
       justify-content: center;
@@ -59,6 +65,17 @@
       object-fit: cover;
       max-width: 100%;
       max-height: 100%;
+
+      animation: rotation 40s infinite linear;
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
 
       @include media("<=tablet") {
         max-width: 80%;
