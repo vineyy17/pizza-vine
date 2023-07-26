@@ -1,9 +1,8 @@
-import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
+import { Outlet } from "react-router-dom";
 import { split } from "../../animations/text";
-import scroll from "../../animations/scroll";
 import { useEffect } from "react";
-
+import scroll from "../../animations/scroll";
 scroll();
 
 function AppLayout() {
@@ -12,7 +11,7 @@ function AppLayout() {
   });
 
   return (
-    <div className="home" data-scroll-container>
+    <div className="home">
       <Header />
 
       <div>

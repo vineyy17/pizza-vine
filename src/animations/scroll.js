@@ -2,11 +2,20 @@ import Lenis from "@studio-freight/lenis";
 
 export default function scroll() {
   const lenis = new Lenis({
-    duration: 1.6,
+    lerp: 0.06,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-    infinite: false,
+    orientation: "vertical",
+    gestureOrientation: "vertical",
     smooth: true,
+    smoothTouch: true,
+    smoothWheel: true,
+    touchMultiplier: 1,
+    wheelMultiplier: 1,
   });
+
+  // lenis.on("scroll", (e) => {
+  //   console.log("scroll");
+  // });
 
   function raf(time) {
     lenis.raf(time);
