@@ -1,4 +1,6 @@
 import Hero from "./Hero";
+import PizzaMoment from "./PizzaMoment";
+import PizzaOutro from "./PizzaOutro";
 import PizzaIntro from "./pizzaIntro";
 
 function Home() {
@@ -6,6 +8,8 @@ function Home() {
     <div>
       <Hero />
       <PizzaIntro />
+      <PizzaMoment />
+      <PizzaOutro />
     </div>
   );
 }
