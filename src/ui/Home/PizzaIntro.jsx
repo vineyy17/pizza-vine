@@ -3,7 +3,7 @@ import "./PizzaIntro.scss";
 function PizzaIntro() {
   return (
     <div className="pizzaDiv">
-      <div className="pizzaIntro">
+      <div className="pizzaIntro pizzaIntro--green">
         <div className="pizzaIntro__header" data-animation="header">
           <h1 className="pizzaIntro__header__title">
             PASSIONATE THROUGH EVERY SLICE
