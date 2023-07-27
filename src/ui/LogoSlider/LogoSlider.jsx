@@ -1,6 +1,5 @@
-import "./LogoSlider.scss";
-
 import { useEffect } from "react";
+import "./LogoSlider.scss";
 
 function LogoSlider({ companyContents }) {
   useEffect(() => {

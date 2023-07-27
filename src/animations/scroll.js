@@ -13,10 +13,6 @@ export default function scroll() {
     wheelMultiplier: 1,
   });
 
-  // lenis.on("scroll", (e) => {
-  //   console.log("scroll");
-  // });
-
   function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);

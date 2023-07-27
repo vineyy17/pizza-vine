@@ -3,17 +3,17 @@ import "./PizzaIntro.scss";
 function PizzaOutro() {
   return (
     <div className="pizzaDiv">
-      <div className="pizzaIntro pizzaIntro--beige">
+      <div className="pizzaIntro pizzoIntro--beige">
         <div className="pizzaIntro__header" data-animation="header">
           <h1 className="pizzaIntro__header__title">
-            NOURISHING SOULS WITH PLANT-BASED DELIGHTS
+            TASTEFUL DELIGHTS FOR ALL PALATES
           </h1>
         </div>
 
-        <div className="pizzaIntro__text" data-animation="paragraph">
-          <p pizzaIntro__text__paragraph>
-            We’re here to spark joy and entice all to savor more greens. Because
-            we cherish the future – yours, ours, and the planet's.
+        <div className="pizzaIntro__text">
+          <p className="pizzaIntro__text__paragraph" data-animation="paragraph">
+            Our mouthwatering recipes cater to vegans and meat-eaters alike.
+            Because plant-based doesn't mean compromising on flavor.
           </p>
         </div>
 
@@ -21,7 +21,7 @@ function PizzaOutro() {
           <div className="pizzaIntro__photo">
             <img
               className="pizzaIntro__photo__img"
-              src="../../../public/images/features/vegetarian-pizza-with-zucchini-tomato-peppers-mushrooms-removebg-preview.png"
+              src="../../../public/images/features/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view-removebg-preview (1)-min.png"
               alt="sliced pizza"
             />
           </div>

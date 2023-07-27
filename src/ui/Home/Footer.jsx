@@ -1,27 +1,13 @@
-import { useEffect } from "react";
 import "./Footer.scss";
 import { Form } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import useBackgroundImage from "../../hooks/useBackgroundImage";
 
 function Footer() {
   const backgroundImageUrl =
     "https://images.pexels.com/photos/7886785/pexels-photo-7886785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = backgroundImageUrl;
-
-    img.onload = () => {
-      console.log("Background image footer loaded successfully");
-
-      const footer = document.querySelector(".footer");
-      footer.style.backgroundImage = `url(${backgroundImageUrl})`;
-    };
-
-    img.onerror = () => {
-      console.log("Error loading background image footer");
-    };
-  }, []);
+  useBackgroundImage(backgroundImageUrl, "footer");
 
   return (
     <div className="footer">
