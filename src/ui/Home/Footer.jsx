@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./Footer.scss";
 import { Form } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 function Footer() {
   const backgroundImageUrl =
@@ -58,6 +59,20 @@ function Footer() {
           </span>
         </button>
       </Form>
+
+      <div className="footer__links">
+        <div className="footer__links__socials">
+          <FaInstagram />
+          <FaFacebook />
+          <FaLinkedin />
+          <p>PRIVACY POLICY</p>
+        </div>
+
+        <div className="footer__links__name">
+          <span>&copy; PIZZA VINE 2023</span> |{" "}
+          <span>DESIGNED AND DEVELOPED BY VINEY</span>
+        </div>
+      </div>
     </div>
   );
 }

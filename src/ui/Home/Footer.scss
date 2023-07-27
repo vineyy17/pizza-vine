@@ -1,17 +1,14 @@
 @import "../../styles/main.scss";
 
 .footer {
-  //   position: relative;
-  //   height: 100vh;
-  //   width: 100%;
+  position: relative;
+  height: 95vh;
+  width: 100%;
   padding-left: toRem(107);
   padding-right: toRem(107);
-  padding-top: toRem(140);
+  padding-top: toRem(200);
   //   background-color: $beige;
 
-  height: 95vh;
-  position: relative;
-  width: 100%;
   // background-image: url("../../../public/images/features/medium-shot-women-eating-delicious-pizza-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,12 +33,23 @@
     }
   }
 
+  &__links {
+    padding-top: toRem(200);
+    display: flex;
+    justify-content: space-between;
+
+    &__socials {
+      display: flex;
+      gap: 20px;
+    }
+  }
+
   &__form {
     display: flex;
     gap: toRem(21);
     justify-content: space-between;
     align-items: center;
-    padding-top: toRem(30);
+    padding-top: toRem(50);
 
     // &__div {
     // }
@@ -59,6 +67,13 @@
       //   outline: 2px solid transparent;
       //   outline-offset: 2px;
       border-color: transparent;
+      outline: none;
+      color: $red;
+      // caret-color: #819388;
+    }
+
+    &__input::placeholder {
+      color: #819388;
     }
   }
 }
