@@ -1,6 +1,6 @@
-import "./Footer.scss";
 import { Form } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import "./Footer.scss";
 import useBackgroundImage from "../../hooks/useBackgroundImage";
 
 function Footer() {

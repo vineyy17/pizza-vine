@@ -10,13 +10,8 @@ const useBackgroundImage = (backgroundImageUrl, className) => {
       element.style.backgroundImage = `url(${backgroundImageUrl})`;
     };
 
-    img.onerror = () => {
-      console.log(`Error loading background image for class: ${className}`);
-    };
-
     return () => {
       img.onload = null;
-      img.onerror = null;
     };
   }, [backgroundImageUrl, className]);
 };

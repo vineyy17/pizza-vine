@@ -7,9 +7,6 @@
   padding-left: toRem(107);
   padding-right: toRem(107);
   padding-top: toRem(200);
-  //   background-color: $beige;
-
-  // background-image: url("../../../public/images/features/medium-shot-women-eating-delicious-pizza-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,8 +19,6 @@
   }
 
   &__header {
-    // @include textCenter;
-
     &__text {
       font-size: toRem(40);
       font-family: $font-apfel-g;
@@ -51,9 +46,6 @@
     align-items: center;
     padding-top: toRem(50);
 
-    // &__div {
-    // }
-
     &__input {
       width: toRem(500);
       border-radius: 4px;
@@ -64,12 +56,9 @@
       text-transform: uppercase;
       font-family: $font-apfel-g;
       font-weight: 600;
-      //   outline: 2px solid transparent;
-      //   outline-offset: 2px;
       border-color: transparent;
       outline: none;
       color: $red;
-      // caret-color: #819388;
     }
 
     &__input::placeholder {
