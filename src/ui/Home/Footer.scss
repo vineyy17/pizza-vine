@@ -1,0 +1,75 @@
+@import "../../styles/main.scss";
+
+.footer {
+  //   position: relative;
+  //   height: 100vh;
+  //   width: 100%;
+  padding-left: toRem(107);
+  padding-right: toRem(107);
+  padding-top: toRem(140);
+  //   background-color: $beige;
+
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background-image: url("../../../public/images/features/medium-shot-women-eating-delicious-pizza.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: 50%;
+  background-position-y: top;
+  z-index: 1;
+
+  & > * {
+    z-index: 10;
+  }
+
+  &__header {
+    // @include textCenter;
+
+    &__text {
+      font-size: toRem(40);
+      font-family: $font-apfel-g;
+      font-weight: bold;
+      text-align: center;
+      color: $white;
+    }
+  }
+
+  &__form {
+    display: flex;
+    gap: toRem(21);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: toRem(30);
+
+    &__div {
+    }
+
+    &__input {
+      width: toRem(500);
+      border-radius: 4px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      font-size: toRem(20);
+      text-transform: uppercase;
+      font-family: $font-apfel-g;
+      font-weight: 600;
+      //   outline: 2px solid transparent;
+      //   outline-offset: 2px;
+      border-color: transparent;
+    }
+  }
+}
+
+.footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.521);
+  z-index: -1;
+}

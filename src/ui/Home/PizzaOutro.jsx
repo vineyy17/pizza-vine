@@ -3,31 +3,25 @@ import "./PizzaIntro.scss";
 function PizzaOutro() {
   return (
     <div className="pizzaDiv">
-      <div className="pizzaIntro pizzoIntro--beige">
-        <div
-          className="pizzaIntro__header pizzaIntro__header--beige"
-          data-animation="header"
-        >
+      <div className="pizzaIntro pizzaIntro--beige">
+        <div className="pizzaIntro__header" data-animation="header">
           <h1 className="pizzaIntro__header__title">
-            TASTEFUL DELIGHTS FOR ALL PALATES
+            NOURISHING SOULS WITH PLANT-BASED DELIGHTS
           </h1>
         </div>
 
-        <div
-          className="pizzaIntro__text pizzaIntro__text--beige"
-          data-animation="paragraph"
-        >
+        <div className="pizzaIntro__text" data-animation="paragraph">
           <p pizzaIntro__text__paragraph>
-            Our mouthwatering recipes cater to vegans and meat-eaters alike.
-            Because plant-based doesn't mean compromising on flavor.
+            We’re here to spark joy and entice all to savor more greens. Because
+            we cherish the future – yours, ours, and the planet's.
           </p>
         </div>
 
-        <div className="pizzaIntro__picture pizzaIntro__picture--beige">
+        <div className="pizzaIntro__picture">
           <div className="pizzaIntro__photo">
             <img
               className="pizzaIntro__photo__img"
-              src="../../../public/images/features/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view-removebg-preview (1).png"
+              src="../../../public/images/features/vegetarian-pizza-with-zucchini-tomato-peppers-mushrooms-removebg-preview.png"
               alt="sliced pizza"
             />
           </div>

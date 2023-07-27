@@ -10,17 +10,30 @@
   cursor: pointer;
   transition: all 0.3s;
 
-  &--big {
-    padding: 20px 48px;
-    font-size: toRem(30);
-  }
-
   &:hover {
     @media (any-pointer: fine) {
       border-color: $white;
       color: $red;
       background: $white;
       font-weight: 600;
+    }
+  }
+
+  &--big {
+    padding: 20px 48px;
+    font-size: toRem(30);
+  }
+
+  &--footer {
+    padding: 10px 24px;
+    font-size: toRem(30);
+  }
+
+  &--footer:hover {
+    @media (any-pointer: fine) {
+      border-color: $red;
+      color: $white;
+      background: $red;
     }
   }
 

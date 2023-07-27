@@ -1,7 +1,7 @@
 @import "../../styles//main.scss";
 
 .pizzaVideo {
-  height: 130vh;
+  height: 100vh;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -26,11 +26,7 @@
   }
 
   &__text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    @include textCenter;
 
     &__header {
       @extend %title-100;

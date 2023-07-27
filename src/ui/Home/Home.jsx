@@ -1,8 +1,10 @@
+import Footer from "./Footer";
 import Hero from "./Hero";
 import PizzaMoment from "./PizzaMoment";
-import PizzaOutro from "./PizzaOutro";
 import PizzaVideo from "./PizzaVideo";
 import PizzaIntro from "./pizzaIntro";
+import PizzaMiddle from "./PizzaMiddle";
+import PizzaOutro from "./PizzaOutro";
 
 function Home() {
   return (
@@ -10,8 +12,10 @@ function Home() {
       <Hero />
       <PizzaIntro />
       <PizzaMoment />
-      <PizzaOutro />
+      <PizzaMiddle />
       <PizzaVideo />
+      <PizzaOutro />
+      <Footer />
     </div>
   );
 }

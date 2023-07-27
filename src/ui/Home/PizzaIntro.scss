@@ -20,6 +20,10 @@
     background-color: $beige;
   }
 
+  &--brown {
+    background-color: $light-brown;
+  }
+
   @include media("<=tablet") {
     text-align: center;
     grid-template-columns: 1fr;
