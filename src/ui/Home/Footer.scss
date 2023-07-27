@@ -9,10 +9,10 @@
   padding-top: toRem(140);
   //   background-color: $beige;
 
-  height: 100vh;
+  height: 95vh;
   position: relative;
   width: 100%;
-  background-image: url("../../../public/images/features/medium-shot-women-eating-delicious-pizza.jpg");
+  // background-image: url("../../../public/images/features/medium-shot-women-eating-delicious-pizza-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -43,8 +43,8 @@
     align-items: center;
     padding-top: toRem(30);
 
-    &__div {
-    }
+    // &__div {
+    // }
 
     &__input {
       width: toRem(500);

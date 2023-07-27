@@ -5,6 +5,7 @@ import PizzaVideo from "./PizzaVideo";
 import PizzaIntro from "./pizzaIntro";
 import PizzaMiddle from "./PizzaMiddle";
 import PizzaOutro from "./PizzaOutro";
+import Sponsor from "./Sponsor";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
       <PizzaMoment />
       <PizzaMiddle />
       <PizzaVideo />
-      <PizzaOutro />
+      {/* <Sponsor /> */}
       <Footer />
     </div>
   );

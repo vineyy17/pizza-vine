@@ -10,8 +10,8 @@ function PizzaMiddle() {
           </h1>
         </div>
 
-        <div className="pizzaIntro__text" data-animation="paragraph">
-          <p pizzaIntro__text__paragraph>
+        <div className="pizzaIntro__text">
+          <p className="pizzaIntro__text__paragraph" data-animation="paragraph">
             Our mouthwatering recipes cater to vegans and meat-eaters alike.
             Because plant-based doesn't mean compromising on flavor.
           </p>
@@ -21,7 +21,7 @@ function PizzaMiddle() {
           <div className="pizzaIntro__photo">
             <img
               className="pizzaIntro__photo__img"
-              src="../../../public/images/features/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view-removebg-preview (1).png"
+              src="../../../public/images/features/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view-removebg-preview (1)-min.png"
               alt="sliced pizza"
             />
           </div>
