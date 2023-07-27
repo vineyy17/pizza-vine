@@ -3,6 +3,7 @@ html {
   overscroll-behavior: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 
   @include media("<=phone") {
     font-size: calc(100vw / 550 * 16);
@@ -22,4 +23,5 @@ body {
   min-height: 100vh;
   background: $beige;
   color: $white;
+  // overflow: hidden;
 }
