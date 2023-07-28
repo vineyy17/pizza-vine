@@ -2,8 +2,8 @@ import "./PizzaIntro.scss";
 
 function PizzaOutro() {
   return (
-    <div className="pizzaDiv">
-      <div className="pizzaIntro pizzoIntro--beige">
+    <div className="pizzaDiv pizzaDiv--beige">
+      <div className="pizzaIntro">
         <div className="pizzaIntro__header" data-animation="header">
           <h1 className="pizzaIntro__header__title">
             TASTEFUL DELIGHTS FOR ALL PALATES

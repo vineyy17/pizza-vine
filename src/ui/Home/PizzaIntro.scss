@@ -2,6 +2,14 @@
 
 .pizzaDiv {
   margin-top: -20vh;
+
+  &--green {
+    background-color: $pale-green;
+  }
+
+  &--beige {
+    background-color: $beige;
+  }
 }
 
 .pizzaIntro {
@@ -11,14 +19,6 @@
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: toRem(28);
   justify-content: center;
-
-  &--green {
-    background-color: $pale-green;
-  }
-
-  &--beige {
-    background-color: $beige;
-  }
 
   @include media("<=tablet") {
     text-align: center;
