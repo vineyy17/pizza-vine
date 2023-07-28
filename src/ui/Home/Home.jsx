@@ -2,7 +2,7 @@ import Footer from "./Footer";
 import Hero from "./Hero";
 import PizzaMoment from "./PizzaMoment";
 import PizzaVideo from "./PizzaVideo";
-import PizzaIntro from "./pizzaIntro";
+import PizzaIntro from "./PizzaIntro";
 import PizzaOutro from "./PizzaOutro";
 
 function Home() {
