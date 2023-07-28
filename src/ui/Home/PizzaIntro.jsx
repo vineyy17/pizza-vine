@@ -22,7 +22,7 @@ function PizzaIntro() {
           <div className="pizzaIntro__photo">
             <img
               className="pizzaIntro__photo__img"
-              src="../../../public/images/features/pexels-nataliya-vaitkevich-5792328-removebg-preview-min.png"
+              src="../../../images/features/pexels-nataliya-vaitkevich-5792328-removebg-preview-min.png"
               alt="sliced pizza"
             />
           </div>

@@ -21,7 +21,7 @@ function PizzaOutro() {
           <div className="pizzaIntro__photo">
             <img
               className="pizzaIntro__photo__img"
-              src="../../../public/images/features/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view-removebg-preview (1)-min.png"
+              src="../../../images/features/fresh-pizza-with-mushrooms-ham-cheese-white-background-copy-space-homemade-with-love-fast-delivery-recipe-menu-top-view-removebg-preview (1)-min.png"
               alt="sliced pizza"
             />
           </div>

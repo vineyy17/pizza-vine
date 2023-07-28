@@ -5,7 +5,7 @@ function PizzaVideo() {
     <div className="pizzaVideo">
       <div className="pizzaVideo__video">
         <video className="pizzaVideo__video__content" autoPlay loop muted>
-          <source src="../../../public/images/videos/production_id_4266804 (2160p) (1).mp4" />
+          <source src="../../../images/videos/production_id_4266804 (2160p) (1).mp4" />
           Your browser is not supported!
         </video>
       </div>
