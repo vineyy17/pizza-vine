@@ -12,8 +12,11 @@
   background-position-y: top;
   z-index: 1;
 
+  @include media("<tablet") {
+    background-attachment: scroll;
+  }
+
   @include media("<=phone") {
-    padding-top: toRem(130);
     padding-left: toRem(30);
     padding-right: toRem(30);
   }

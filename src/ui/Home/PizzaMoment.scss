@@ -8,6 +8,10 @@
   background-position-x: 50%;
   background-position-y: top;
 
+  @include media("<=tablet") {
+    background-attachment: scroll;
+  }
+
   @include media("<=phone") {
     height: 100vh;
   }

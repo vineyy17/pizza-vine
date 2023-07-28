@@ -1,31 +1,8 @@
-import { useEffect, useState } from "react";
 import "./Header.scss";
 
 function Header() {
-  const [isVisible, setIsVisible] = useState(true);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-
-    setIsVisible(currentScrollPos <= 0 || currentScrollPos < prevScrollPos);
-    setPrevScrollPos(currentScrollPos);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  });
-
   return (
-    <div
-      className="header"
-      style={{
-        transform: isVisible ? "translateY(0)" : "translateY(-100%)",
-      }}
-    >
+    <div className="header">
       <nav className="nav">
         <div className="nav__about">
           <span>About</span>

@@ -18,7 +18,7 @@
   }
 
   @include media("<=phone") {
-    margin-top: toRem(70);
+    margin-top: toRem(50);
     height: 108vh;
   }
 
@@ -79,6 +79,10 @@
       @include media("<=tablet") {
         margin-top: toRem(40);
       }
+
+      @include media("<=phone") {
+        margin-top: toRem(30);
+      }
     }
   }
 
@@ -118,6 +122,10 @@
         max-width: 80%;
         max-height: 80%;
         justify-self: center;
+      }
+
+      @include media("<=phone") {
+        margin-top: 1rem;
       }
     }
   }
