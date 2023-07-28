@@ -24,6 +24,10 @@ body {
   font-size: toRem(22);
   background: $red;
   color: $white;
+
+  @include media("<=tablet") {
+    font-size: 2.4rem;
+  }
 }
 
 ::-webkit-scrollbar {

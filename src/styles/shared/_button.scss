@@ -22,11 +22,22 @@
   &--big {
     padding: 20px 48px;
     font-size: toRem(30);
+
+    @include media("<=tablet") {
+      padding: 15px 30px;
+      font-size: toRem(50);
+    }
   }
 
   &--footer {
     padding: 10px 24px;
     font-size: toRem(30);
+
+    @include media("<=tablet") {
+      margin-top: 5px;
+      width: 100%;
+      font-size: toRem(40);
+    }
   }
 
   &--footer:hover {

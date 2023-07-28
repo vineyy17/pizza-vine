@@ -25,10 +25,26 @@
   line-height: 1.4;
   background-color: transparent;
   color: $white;
+  position: relative;
+
+  &__about,
+  &__order,
+  &__cart,
+  button {
+    @include media("<=tablet") {
+      display: none;
+    }
+  }
 
   &__brand {
     @extend %description-40;
     font-family: $font-apfel-g;
+    text-align: center;
+
+    @include media("<=tablet") {
+      margin: 1rem auto;
+      font-size: toRem(70);
+    }
   }
 
   &__button {

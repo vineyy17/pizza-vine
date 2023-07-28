@@ -43,10 +43,13 @@ function Footer() {
       </Form>
 
       <div className="footer__links">
-        <div className="footer__links__socials">
-          <FaInstagram />
-          <FaFacebook />
-          <FaLinkedin />
+        <div className="footer__links__social">
+          <div className="footer__links__socials">
+            <FaInstagram />
+            <FaFacebook />
+            <FaLinkedin />
+          </div>
+
           <p>PRIVACY POLICY</p>
         </div>
 

@@ -2,4 +2,8 @@
   font-size: toRem(70);
   font-family: $font-apfel-g;
   font-weight: bold;
+
+  @include media("<=tablet") {
+    font-size: toRem(100);
+  }
 }

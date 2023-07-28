@@ -32,4 +32,10 @@
   &__header {
     @extend %title-100;
   }
+
+  &__paragraph {
+    @include media("<=tablet") {
+      // font-size: 2.4rem;
+    }
+  }
 }

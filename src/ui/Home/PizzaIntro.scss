@@ -38,7 +38,7 @@
     @include media("<=tablet") {
       padding-left: 0;
       grid-row: 1 / 2;
-      width: 50%;
+      width: 60%;
       margin: 0 auto;
       z-index: 5;
     }
@@ -62,7 +62,7 @@
     @include media("<=tablet") {
       padding-left: 0;
       grid-row: 3 / 4;
-      width: 50%;
+      width: 60%;
       margin: 0 auto;
       z-index: 5;
     }
@@ -74,7 +74,6 @@
 
     @include media("<=tablet") {
       grid-column: 1 / -1;
-      align-self: center;
     }
 
     display: grid;
@@ -82,11 +81,15 @@
   }
 
   &__photo {
+    align-self: center;
     &__img {
-      display: block;
       height: 100%;
       width: 100%;
       object-fit: cover;
+
+      @include media("<=tablet") {
+        height: toRem(700);
+      }
     }
   }
 }
