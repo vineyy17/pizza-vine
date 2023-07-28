@@ -54,7 +54,7 @@ function Footer() {
         </div>
 
         <div className="footer__links__name">
-          <span>&copy; PIZZA VINE 2023</span> |{" "}
+          <span>&copy; PIZZA VINE 2023</span> <span id="dash">|</span>{" "}
           <span>DESIGNED AND DEVELOPED BY VINEY</span>
         </div>
       </div>

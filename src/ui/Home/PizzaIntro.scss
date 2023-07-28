@@ -19,6 +19,7 @@
   grid-template-rows: repeat(2, 1fr);
   grid-row-gap: toRem(28);
   justify-content: center;
+  padding-top: 20vh;
 
   @include media("<=tablet") {
     text-align: center;
@@ -26,7 +27,9 @@
     grid-template-rows: repeat(3, 1fr);
   }
 
-  padding-top: 20vh;
+  @include media("<=phone") {
+    padding-top: 10vh;
+  }
 
   &__header {
     grid-column: 1 / 2;
@@ -41,6 +44,10 @@
       width: 60%;
       margin: 0 auto;
       z-index: 5;
+    }
+
+    @include media("<=phone") {
+      width: 80%;
     }
 
     &__title {
@@ -66,6 +73,10 @@
       margin: 0 auto;
       z-index: 5;
     }
+
+    @include media("<=phone") {
+      width: 80%;
+    }
   }
 
   &__picture {
@@ -89,6 +100,10 @@
 
       @include media("<=tablet") {
         height: toRem(700);
+      }
+
+      @include media("<=phone") {
+        height: toRem(600);
       }
     }
   }

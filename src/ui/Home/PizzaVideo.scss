@@ -28,6 +28,10 @@
   &__text {
     @include textCenter;
 
+    @include media("<=phone") {
+      width: 100%;
+    }
+
     &__header {
       @extend %title-100;
     }

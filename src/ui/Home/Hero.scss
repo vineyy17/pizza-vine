@@ -15,6 +15,15 @@
   justify-content: center;
   margin-top: toRem(120);
 
+  @include media("<=tablet") {
+    display: block;
+  }
+
+  @include media("<=phone") {
+    margin-top: toRem(70);
+    height: 108vh;
+  }
+
   --mask: radial-gradient(
         80.5px at 50% calc(100% - 108px),
         #000 99%,
@@ -45,6 +54,10 @@
       @include media("<=tablet") {
         font-size: 5rem;
       }
+
+      @include media("<=phone") {
+        font-size: 3.5rem;
+      }
     }
 
     &__paragraph {
@@ -55,6 +68,10 @@
       @include media("<=tablet") {
         margin-top: toRem(10);
         max-width: 100%;
+      }
+
+      @include media("<=phone") {
+        line-height: 1;
       }
     }
 

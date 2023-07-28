@@ -6,4 +6,8 @@
   @include media("<=tablet") {
     font-size: toRem(100);
   }
+
+  @include media("<=phone") {
+    font-size: toRem(60);
+  }
 }

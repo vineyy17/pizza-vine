@@ -14,6 +14,12 @@
   background-position-y: top;
   z-index: 1;
 
+  @include media("<=phone") {
+    padding-top: toRem(130);
+    padding-left: toRem(30);
+    padding-right: toRem(30);
+  }
+
   & > * {
     z-index: 10;
   }
@@ -28,6 +34,10 @@
 
       @include media("<=tablet") {
         font-size: toRem(50);
+      }
+
+      @include media("<=phone") {
+        font-size: toRem(40);
       }
     }
   }
@@ -47,8 +57,29 @@
       width: 100%;
     }
 
+    @include media("<=phone") {
+      top: 75%;
+    }
+
     &__name {
       margin-top: 20px;
+
+      @include media("<=phone") {
+        margin-top: 0;
+      }
+
+      & > span {
+        @include media("<=phone") {
+          display: block;
+          margin: 10px;
+        }
+      }
+
+      #dash {
+        @include media("<=phone") {
+          display: none;
+        }
+      }
     }
 
     &__socials {
@@ -95,6 +126,14 @@
       @include media("<=tablet") {
         width: 100%;
         font-size: toRem(30);
+      }
+
+      @include media("<=phone") {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: toRem(25);
+        border-radius: 6px;
       }
     }
 

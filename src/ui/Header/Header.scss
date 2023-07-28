@@ -45,6 +45,11 @@
       margin: 1rem auto;
       font-size: toRem(70);
     }
+
+    @include media("<=phone") {
+      margin: 0 auto;
+      font-size: toRem(60);
+    }
   }
 
   &__button {

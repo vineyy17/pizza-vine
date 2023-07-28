@@ -27,6 +27,11 @@
       padding: 15px 30px;
       font-size: toRem(50);
     }
+
+    @include media("<=phone") {
+      padding: 10px 20px;
+      font-size: toRem(35);
+    }
   }
 
   &--footer {
@@ -37,6 +42,10 @@
       margin-top: 5px;
       width: 100%;
       font-size: toRem(40);
+    }
+
+    @include media("<=phone") {
+      font-size: toRem(30);
     }
   }
 
