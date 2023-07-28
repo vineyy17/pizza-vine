@@ -65,7 +65,7 @@
     }
 
     &__name {
-      margin-top: 20px;
+      margin-top: 10px;
 
       @include media("<=phone") {
         margin-top: 0;
@@ -93,7 +93,7 @@
 
     &__social {
       display: flex;
-      gap: 15px;
+      gap: 10px;
 
       @include media("<=tablet") {
         flex-direction: column;

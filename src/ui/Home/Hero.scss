@@ -21,7 +21,7 @@
 
   @include media("<=phone") {
     margin-top: toRem(50);
-    height: 108vh;
+    height: 120vh;
   }
 
   --mask: radial-gradient(

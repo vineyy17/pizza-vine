@@ -93,18 +93,19 @@
 
   &__photo {
     align-self: center;
+
+    @include media("<=tablet") {
+      height: 50%;
+    }
+
+    @include media("<=phone") {
+      height: 40%;
+    }
+
     &__img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-
-      @include media("<=tablet") {
-        height: toRem(600);
-      }
-
-      @include media("<=phone") {
-        height: toRem(500);
-      }
     }
   }
 }
