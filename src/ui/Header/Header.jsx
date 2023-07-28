@@ -44,7 +44,7 @@ function Header() {
 
         <div className="nav__cart">
           <span>Cart</span>
-          <span>(1)</span>
+          <span>(2)</span>
         </div>
 
         <button className="nav__button c-button">
