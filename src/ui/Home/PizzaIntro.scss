@@ -20,6 +20,7 @@
   padding-top: 20vh;
 
   @include media("<=tablet") {
+    height: 100rem;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -69,6 +70,7 @@
       grid-row: 3 / 4;
       width: 60%;
       margin: 0 auto;
+      margin-top: 2rem;
       z-index: 5;
     }
 
