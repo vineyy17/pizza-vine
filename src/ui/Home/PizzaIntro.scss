@@ -97,11 +97,11 @@
       object-fit: cover;
 
       @include media("<=tablet") {
-        height: toRem(700);
+        height: toRem(600);
       }
 
       @include media("<=phone") {
-        height: toRem(400);
+        height: toRem(500);
       }
     }
   }

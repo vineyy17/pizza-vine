@@ -24,8 +24,8 @@
     font-size: toRem(30);
 
     @include media("<=tablet") {
-      padding: 15px 30px;
-      font-size: toRem(50);
+      padding: 10px 25px;
+      font-size: toRem(40);
     }
 
     @include media("<=phone") {

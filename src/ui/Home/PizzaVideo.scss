@@ -5,10 +5,10 @@
   overflow: hidden;
 
   @include media("<=tablet") {
-    background: url("https://images.pexels.com/photos/4254139/pexels-photo-4254139.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background: url("../../../images/features/delivery-concept-portrait-happy-african-american-delivery-man-red-cloth-holding-box-package-isolated-grey-studio-background-copy-space-min.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 35%;
+    background-position-x: 40%;
     background-position-y: top;
   }
 
@@ -59,6 +59,6 @@
   z-index: 1;
 
   @include media("<=tablet") {
-    background: rgba(0, 0, 0, 0.525);
+    background: rgba(0, 0, 0, 0.498);
   }
 }
