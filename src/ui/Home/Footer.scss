@@ -19,6 +19,7 @@
   @include media("<=phone") {
     padding-left: toRem(30);
     padding-right: toRem(30);
+    padding-top: toRem(240);
   }
 
   & > * {

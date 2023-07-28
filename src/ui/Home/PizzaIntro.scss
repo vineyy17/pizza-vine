@@ -101,7 +101,7 @@
       }
 
       @include media("<=phone") {
-        height: toRem(500);
+        height: toRem(400);
       }
     }
   }
