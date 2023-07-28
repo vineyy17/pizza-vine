@@ -3,7 +3,10 @@ html {
   overscroll-behavior: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  overflow: hidden;
+  scroll-behavior: initial;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
 
   @include media("<=phone") {
     font-size: calc(100vw / 550 * 16);
@@ -19,7 +22,23 @@ body {
   font-family: $font-suisse-bp;
   font-weight: 400;
   font-size: toRem(22);
-  min-height: 100vh;
   background: $red;
   color: $white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $red;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $red;
 }

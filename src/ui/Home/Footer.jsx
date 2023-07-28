@@ -18,23 +18,19 @@ function Footer() {
       </div>
 
       <Form className="footer__form">
-        <div className="footer__form__div">
-          <input
-            className="footer__form__input"
-            type="text"
-            placeholder="full name"
-            required
-          />
-        </div>
+        <input
+          className="footer__form__input"
+          type="text"
+          placeholder="full name"
+          required
+        />
 
-        <div className="footer__form__div">
-          <input
-            className="footer__form__input"
-            type="email"
-            placeholder="email address"
-            required
-          />
-        </div>
+        <input
+          className="footer__form__input"
+          type="email"
+          placeholder="email address"
+          required
+        />
 
         <button className="c-button c-button--footer">
           <span className="c-link">

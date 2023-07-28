@@ -3,7 +3,7 @@
 %padding-h-feature {
   padding-left: toRem(90);
   padding-right: 0;
-  padding-top: toRem(176);
+  padding-top: toRem(140);
 }
 
 .hero {
@@ -13,6 +13,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, min-content);
   justify-content: center;
+  margin-top: toRem(120);
 
   --mask: radial-gradient(
         80.5px at 50% calc(100% - 108px),
@@ -66,6 +67,7 @@
     justify-content: center;
     align-items: start;
     overflow: hidden;
+    margin-bottom: -2.7rem;
 
     @include media("<=tablet") {
       justify-content: center;

@@ -1,0 +1,9 @@
+span.word_wrap {
+  overflow: hidden;
+  display: inline-block;
+}
+
+[data-animation="header"] span.word {
+  overflow-y: hidden;
+  position: relative;
+}
