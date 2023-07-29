@@ -23,6 +23,12 @@
     padding-top: toRem(240);
   }
 
+  @include media("<=sm-phone") {
+    padding-left: toRem(10);
+    padding-right: toRem(10);
+    padding-top: toRem(150);
+  }
+
   & > * {
     z-index: 10;
   }
@@ -41,6 +47,10 @@
 
       @include media("<=phone") {
         font-size: toRem(40);
+      }
+
+      @include media("<=sm-phone") {
+        font-size: toRem(30);
       }
     }
   }
@@ -69,6 +79,11 @@
 
       @include media("<=phone") {
         margin-top: 0;
+        font-size: 1.5rem;
+      }
+
+      @include media("<=sm-phone") {
+        font-size: 1.2rem;
       }
 
       & > span {
@@ -89,6 +104,14 @@
       display: flex;
       gap: 15px;
       justify-content: center;
+
+      @include media("<=phone") {
+        font-size: 1.5rem;
+      }
+
+      @include media("<=sm-phone") {
+        font-size: 1.2rem;
+      }
     }
 
     &__social {
@@ -138,6 +161,13 @@
       @include media("<=phone") {
         font-size: toRem(25);
         border-radius: 6px;
+      }
+
+      @include media("<=sm-phone") {
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        font-size: toRem(20);
       }
     }
 

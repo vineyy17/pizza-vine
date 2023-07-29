@@ -30,6 +30,10 @@
     padding-top: 10vh;
   }
 
+  @include media("<=sm-phone") {
+    padding-top: 0;
+  }
+
   &__header {
     grid-column: 1 / 2;
     align-self: end;
@@ -105,6 +109,10 @@
 
     @include media("<=phone") {
       height: 42%;
+    }
+
+    @include media("<=sm-phone") {
+      height: 28%;
     }
 
     &__img {

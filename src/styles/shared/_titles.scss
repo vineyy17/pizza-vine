@@ -10,4 +10,8 @@
   @include media("<=phone") {
     font-size: toRem(60);
   }
+
+  @include media("<=sm-phone") {
+    font-size: toRem(50);
+  }
 }

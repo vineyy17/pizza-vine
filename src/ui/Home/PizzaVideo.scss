@@ -43,6 +43,10 @@
       width: 100%;
     }
 
+    @include media("<=sm-phone") {
+      width: 90%;
+    }
+
     &__header {
       @extend %title-100;
     }

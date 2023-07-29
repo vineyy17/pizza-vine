@@ -32,6 +32,11 @@
       padding: 10px 20px;
       font-size: toRem(35);
     }
+
+    @include media("<sm-phone") {
+      padding: 5px 10px;
+      font-size: toRem(25);
+    }
   }
 
   &--footer {
@@ -46,6 +51,11 @@
 
     @include media("<=phone") {
       font-size: toRem(30);
+    }
+
+    @include media("<=sm-phone") {
+      padding: 5px 12px;
+      font-size: toRem(25);
     }
   }
 
