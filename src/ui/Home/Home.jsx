@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <Hero />
-      <PizzaIntro />
+      <PizzaIntro id="about" />
       <PizzaMoment />
       <PizzaOutro />
       <PizzaVideo />

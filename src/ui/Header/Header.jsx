@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { Link as SLink } from "react-scroll";
 import "./Header.scss";
 
 function Header() {
@@ -5,33 +7,39 @@ function Header() {
     <div className="header">
       <nav className="nav">
         <div className="nav__about">
-          <span>About</span>
+          <SLink to="about" smooth={true}>
+            About
+          </SLink>
         </div>
 
         <div className="nav__order">
-          <span>Order</span>
+          <Link to="/menu">Order</Link>
         </div>
 
         <div className="nav__brand">
-          <span>
+          <Link to="/">
             Pizza <br />
             Vine
-          </span>
+          </Link>
         </div>
 
         <div className="nav__cart">
-          <span>Cart</span>
-          <span>(2)</span>
+          <Link to="/cart">
+            <span>Cart</span>
+            <span>(2)</span>
+          </Link>
         </div>
 
-        <button className="nav__button c-button">
-          <span className="c-link">
-            <span className="c-link__inner">
-              <span>Contact us</span>
-              <span className="c-link__animated">Contact us</span>
+        <SLink to="footer-section" smooth={true}>
+          <button className="nav__button c-button">
+            <span className="c-link">
+              <span className="c-link__inner">
+                <span>Contact us</span>
+                <span className="c-link__animated">Contact us</span>
+              </span>
             </span>
-          </span>
-        </button>
+          </button>
+        </SLink>
       </nav>
     </div>
   );

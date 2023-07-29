@@ -1,5 +1,10 @@
 import { Form } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa6";
 import "./Footer.scss";
 import useBackgroundImage from "../../hooks/useBackgroundImage";
 
@@ -10,7 +15,7 @@ function Footer() {
   useBackgroundImage(backgroundImageUrl, "footer");
 
   return (
-    <div className="footer">
+    <div className="footer" id="footer-section">
       <div className="footer__header">
         <h1 className="footer__header__text" data-animation="header">
           GRAB PIZZA PERKS- SIGN UP FOR OFFERS & UPDATES
@@ -45,9 +50,9 @@ function Footer() {
       <div className="footer__links">
         <div className="footer__links__social">
           <div className="footer__links__socials">
-            <FaInstagram />
-            <FaFacebook />
+            <FaTwitter />
             <FaLinkedin />
+            <FaInstagram />
           </div>
 
           <p>PRIVACY POLICY</p>
