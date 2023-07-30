@@ -10,3 +10,49 @@
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+@mixin divide-y {
+  > :not([hidden]) {
+    --divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--divide-y-reverse));
+  }
+
+  > :not([hidden]) ~ :not([hidden]) {
+    border-top-width: calc(1px * calc(1 - var(--divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--divide-y-reverse));
+  }
+}
+
+@mixin divide-stone-200 {
+  > :not([hidden]) ~ :not([hidden]) {
+    --divide-opacity: 1;
+    border-color: rgb(231, 229, 228, var(--divide-opacity));
+  }
+}
+
+@mixin grayscale-effect {
+  --blur: blur(0);
+  --brightness: brightness(100%);
+  --contrast: contrast(100%);
+  --grayscale: grayscale(100%);
+  --hue-rotate: hue-rotate(0);
+  --invert: invert(0);
+  --saturate: saturate(0);
+  --sepia: sepia(0);
+  --drop-shadow: drop-shadow(0 0 transparent);
+
+  filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale)
+    var(--hue-rotate) var(--invert) var(--saturate) var(--sepia)
+    var(--drop-shadow);
+}
+
+@mixin text-stone-500 {
+  --text-opacity: 0.7;
+  color: rgb(255, 9, 12, var(--text-opacity));
+}
+
+@mixin text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}

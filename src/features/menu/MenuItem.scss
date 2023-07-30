@@ -1,0 +1,57 @@
+.menuList {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  //   border-top: 1px solid red;
+
+  &__image {
+    height: 6rem;
+    border-radius: 5px;
+
+    &--soldOut {
+      @include grayscale-effect;
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding-top: 0.125rem;
+
+    &__name {
+      font-weight: 500;
+    }
+
+    &__ingredients {
+      @include text-sm;
+      @include text-stone-500;
+      text-transform: capitalize;
+      font-style: italic;
+    }
+
+    &__priceDiv {
+      margin-top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__price {
+      @include text-sm;
+    }
+
+    &__soldOut {
+      @include text-sm;
+      @include text-stone-500;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.menuList:first-child {
+  border-top: none;
+}

@@ -1,5 +1,24 @@
+import { useLoaderData } from "react-router-dom";
+import { getMenu } from "../../services/apiRestaurant";
+import "./Menu.scss";
+import MenuItem from "./MenuItem";
+
 function Menu() {
-  return <div>Menu</div>;
+  const menu = useLoaderData();
+
+  return (
+    // <ul className="divide-y divide-stone-200 px-2">
+    <ul className="menu">
+      {menu.map((pizza) => (
+        <MenuItem pizza={pizza} key={pizza.id} />
+      ))}
+    </ul>
+  );
+}
+
+export async function loader() {
+  const menu = await getMenu();
+  return menu;
 }
 
 export default Menu;

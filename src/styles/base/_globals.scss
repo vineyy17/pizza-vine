@@ -22,7 +22,7 @@ body {
   font-family: $font-suisse-bp, sans-serif;
   font-weight: 400;
   font-size: toRem(22);
-  background: $red;
+  background: $beige;
   color: $white;
 
   @include media("<=tablet") {
