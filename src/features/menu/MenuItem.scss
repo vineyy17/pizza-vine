@@ -49,6 +49,16 @@
       font-weight: 500;
       text-transform: uppercase;
     }
+
+    &__update {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      @include media("<=phone") {
+        gap: 0.75rem;
+      }
+    }
   }
 }
 

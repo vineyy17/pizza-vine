@@ -2,6 +2,7 @@ import { Form } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import "./Footer.scss";
 import useBackgroundImage from "../../hooks/useBackgroundImage";
+import Button from "../Button/Button";
 
 function Footer() {
   const backgroundImageUrl =
@@ -32,14 +33,7 @@ function Footer() {
           required
         />
 
-        <button className="c-button c-button--footer">
-          <span className="c-link">
-            <span className="c-link__inner">
-              <span>Sign up</span>
-              <span className="c-link__animated">Sign up</span>
-            </span>
-          </span>
-        </button>
+        <Button type="footer">Sign up</Button>
       </Form>
 
       <div className="footer__links">

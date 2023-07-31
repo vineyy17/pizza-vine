@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Link as SLink } from "react-scroll";
 import "./Header.scss";
+import Button from "../Button/Button";
 
 function Header() {
   return (
@@ -31,14 +32,7 @@ function Header() {
         </div>
 
         <SLink to="footer-section" smooth={true}>
-          <button className="nav__button c-button">
-            <span className="c-link">
-              <span className="c-link__inner">
-                <span>Contact us</span>
-                <span className="c-link__animated">Contact us</span>
-              </span>
-            </span>
-          </button>
+          <Button type="nav">Contact us</Button>
         </SLink>
       </nav>
     </div>
