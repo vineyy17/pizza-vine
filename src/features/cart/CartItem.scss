@@ -1,0 +1,25 @@
+.cartItem {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__name {
+    // margin-bottom: 0.25rem;
+    margin-bottom: 0;
+  }
+
+  &__update {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    &__price {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+    }
+  }
+}
