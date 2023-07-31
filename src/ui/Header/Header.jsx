@@ -2,8 +2,12 @@ import { Link } from "react-router-dom";
 import { Link as SLink } from "react-scroll";
 import "./Header.scss";
 import Button from "../Button/Button";
+import { useSelector } from "react-redux";
+import { getTotalCartQuantity } from "../../features/cart/cartSlice";
 
 function Header() {
+  const totalCartQuantity = useSelector(getTotalCartQuantity);
+
   return (
     <div className="header">
       <nav className="nav">
@@ -27,7 +31,7 @@ function Header() {
         <div className="nav__cart">
           <Link to="/cart">
             <span>Cart</span>
-            <span>(2)</span>
+            <span>({totalCartQuantity ? totalCartQuantity : 0})</span>
           </Link>
         </div>
 

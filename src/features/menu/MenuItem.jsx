@@ -59,7 +59,11 @@ function MenuItem({ pizza }) {
             </div>
           )}
 
-          {!soldOut && !isInCart && <Button>Add to cart</Button>}
+          {!soldOut && !isInCart && (
+            <Button type="addCart" onClick={handleAddToCart}>
+              Add to cart
+            </Button>
+          )}
         </div>
       </div>
     </li>

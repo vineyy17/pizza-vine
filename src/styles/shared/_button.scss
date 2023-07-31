@@ -71,6 +71,43 @@
     }
   }
 
+  &--addCart {
+    color: $red;
+    border: 1px solid $red;
+    font-size: toRem(15);
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+  }
+
+  &--addCart:hover {
+    @media (any-pointer: fine) {
+      border-color: $red;
+      color: $white;
+      background: $red;
+      font-size: toRem(15);
+      font-weight: 300;
+    }
+  }
+
+  &--round {
+    color: $red;
+    border: 1px solid $red;
+    font-size: toRem(20);
+    font-weight: 300;
+    padding: 0.25rem 0.7rem;
+  }
+
+  &--round:hover {
+    @media (any-pointer: fine) {
+      border-color: $red;
+      color: $white;
+      background: $red;
+      font-size: toRem(20);
+      font-weight: 300;
+      // border-radius: 50%;
+    }
+  }
+
   .c-link {
     display: inline-flex;
     align-items: center;
