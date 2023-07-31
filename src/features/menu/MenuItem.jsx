@@ -4,6 +4,7 @@ import { addItem, getCurrentQuantityById } from "../cart/cartSlice";
 import DeleteItem from "../cart/DeleteItem";
 import UpdateItemQuantity from "../cart/UpdateItemQuantity";
 import "./MenuItem.scss";
+import Button from "../../ui/Button/Button";
 
 function MenuItem({ pizza }) {
   const dispatch = useDispatch();
@@ -57,6 +58,8 @@ function MenuItem({ pizza }) {
               <DeleteItem pizzaId={id} />
             </div>
           )}
+
+          {!soldOut && !isInCart && <Button>Add to cart</Button>}
         </div>
       </div>
     </li>

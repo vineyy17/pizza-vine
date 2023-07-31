@@ -1,12 +1,13 @@
 import { useDispatch } from "react-redux";
 import { decreaseItemQuantity, increaseItemQuantity } from "./cartSlice";
+import "./UpdateItemQuantity.scss";
 
 function UpdateItemQuantity({ pizzaId, currentQuantity }) {
   const dispatch = useDispatch();
   return (
-    <div>
+    <div className="itemQuantity">
       <button>-</button>
-      <span>{currentQuantity}</span>
+      <span className="itemQuantity__qty">{currentQuantity}</span>
       <button>+</button>
     </div>
   );

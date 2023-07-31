@@ -2,8 +2,15 @@ import "./Hero.scss";
 import LogoSlider from "../LogoSlider/LogoSlider";
 import companyData from "../../data/companyData";
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/menu");
+  }
+
   return (
     <div className="hero">
       <div className="hero__feature">
@@ -17,7 +24,9 @@ function Hero() {
           </p>
 
           <div className="hero__feature__button">
-            <Button type="order">Order now</Button>
+            <Button type="order" onClick={handleClick}>
+              Order now
+            </Button>
           </div>
         </div>
       </div>
