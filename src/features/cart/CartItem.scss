@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid rgba($red, 0.2);
 
   &__name {
-    // margin-bottom: 0.25rem;
     margin-bottom: 0;
   }
 
@@ -17,8 +17,7 @@
     gap: 1.5rem;
 
     &__price {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
+      @include text-sm;
       font-weight: 700;
     }
   }

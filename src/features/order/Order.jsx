@@ -28,6 +28,7 @@ function Order() {
     priority,
     priorityPrice,
     orderPrice,
+    customer,
     estimatedDelivery,
     cart,
   } = order;
@@ -49,8 +50,10 @@ function Order() {
       <div className="order__time">
         <p className="order__time__minutes">
           {deliveryIn >= 0
-            ? `Only ${calcMinutesLeft(estimatedDelivery)} minutes left ⌛`
-            : "Order should have arrived"}
+            ? `${customer}, ${calcMinutesLeft(
+                estimatedDelivery
+              )} mins till pizza! ⌛`
+            : `${customer}, pizza's here!`}
         </p>
         <p className="order__time__date">
           (Estimated delivery: {formatDate(estimatedDelivery)})
@@ -92,6 +95,7 @@ function Order() {
 
 export async function loader({ params }) {
   const order = await getOrder(params.orderId);
+  console.log(order);
   return order;
 }
 
