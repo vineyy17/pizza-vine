@@ -5,7 +5,7 @@ import "../../styles/shared/_button.scss";
 function Button({ children, type, disabled, to, onClick }) {
   if (to)
     return (
-      <Link className={`c-button c-button--${type}`}>
+      <Link className={`c-button c-button--${type}`} to={to}>
         <span className="c-link">
           <span className="c-link__inner">
             <span>{children}</span>
