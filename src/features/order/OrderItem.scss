@@ -1,0 +1,28 @@
+.orderItem {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    &__qty {
+      font-weight: 700;
+    }
+
+    &__price {
+      font-weight: 700;
+    }
+
+    &__ingredients {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      text-transform: capitalize;
+      font-style: italic;
+    }
+  }
+}

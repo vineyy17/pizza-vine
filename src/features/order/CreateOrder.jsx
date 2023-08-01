@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Form, useActionData, useNavigation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
 import { clearCart, getCart, getTotalCartPrice } from "../cart/cartSlice";
 import EmptyCart from "../cart/EmptyCart";
 import { formatCurrency } from "../../utils/helpers";
@@ -21,7 +21,6 @@ function CreateOrder() {
   const isSubmitting = navigation.state === "submitting";
 
   const formErrors = useActionData();
-  const dispatch = useDispatch();
 
   const cart = useSelector(getCart);
   const totalCartPrice = useSelector(getTotalCartPrice);
@@ -32,7 +31,7 @@ function CreateOrder() {
 
   return (
     <div className="orderForm">
-      <h2 className="orderForm__text">Ready to order? Let's go!</h2>
+      <h2 className="orderForm__text">Ready to place an order? Let's go!</h2>
 
       <Form method="POST">
         <div className="orderForm__nameInput">
@@ -41,7 +40,6 @@ function CreateOrder() {
             className="input input--order"
             type="text"
             name="customer"
-            defaultValue=""
             required
           />
         </div>
@@ -49,8 +47,15 @@ function CreateOrder() {
         <div className="orderForm__nameInput">
           <label className="orderForm__nameInput__label">Telephone</label>
           <div className="orderForm__nameInput__div">
-            <input className="input input--order" />
-            {formErrors?.phone && <p>{formErrors.phone}</p>}
+            <input
+              className="input input--order"
+              type="tel"
+              name="phone"
+              required
+            />
+            {formErrors?.phone && (
+              <p className="orderForm__nameInput__error">{formErrors.phone}</p>
+            )}
           </div>
         </div>
 
@@ -61,11 +66,8 @@ function CreateOrder() {
               className="input input--order"
               type="text"
               name="address"
-              // disabled={}
-              defaultValue=""
               required
             />
-            {/* {addressStatus === "error" && <p>{errorAddress}</p>} */}
           </div>
         </div>
 
@@ -79,7 +81,7 @@ function CreateOrder() {
             onChange={(e) => setWithPriority(e.target.checked)}
           />
           <label htmlFor="priority" className="font-medium">
-            Want to give your order priority?
+            Looking to prioritize your order?
           </label>
         </div>
 
@@ -119,7 +121,7 @@ export async function action({ request }) {
   const errors = {};
   if (!isValidPhone(order.phone))
     errors.phone =
-      "Please enter a correct phone number. We might need it to contact you.";
+      "Please enter a correct phone number. We will need it to contact you.";
 
   if (Object.keys(errors).length > 0) return errors;
 
@@ -128,7 +130,7 @@ export async function action({ request }) {
   // Do not overuse
   store.dispatch(clearCart());
 
-  // return redirect(`/order/${newOrder.id}`);
+  return redirect(`/order/${newOrder.id}`);
 }
 
 export default CreateOrder;

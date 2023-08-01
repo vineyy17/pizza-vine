@@ -4,11 +4,12 @@ import Error from "./ui/Error/Error";
 import Menu, { loader as menuLoader } from "./features/menu/Menu";
 import Cart from "./features/cart/Cart";
 import Faq from "./features/faq/Faq";
+import Home from "./ui/Home/Home";
 import CreateOrder, {
   action as createOrderAction,
 } from "./features/order/CreateOrder";
-import Order from "./features/order/Order";
-import Home from "./ui/Home/Home";
+import Order, { loader as orderLoader } from "./features/order/Order";
+import { action as updateOrderAction } from "./features/order/UpdateOrder";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,9 @@ const router = createBrowserRouter([
       {
         path: "/order/:orderId",
         element: <Order />,
+        loader: orderLoader,
+        errorElement: <Error />,
+        action: updateOrderAction,
       },
     ],
   },
