@@ -5,9 +5,9 @@ import { useEffect } from "react";
 import scroll from "../../animations/scroll";
 import Loader from "../Loader/Loader";
 import "./AppLayout.scss";
-scroll();
 
 function AppLayout() {
+  scroll();
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
 

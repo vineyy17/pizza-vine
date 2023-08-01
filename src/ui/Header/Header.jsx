@@ -4,6 +4,7 @@ import "./Header.scss";
 import Button from "../Button/Button";
 import { useSelector } from "react-redux";
 import { getTotalCartQuantity } from "../../features/cart/cartSlice";
+import SearchOrder from "../../features/order/SearchOrder";
 
 function Header() {
   const totalCartQuantity = useSelector(getTotalCartQuantity);

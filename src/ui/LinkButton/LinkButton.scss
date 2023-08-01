@@ -1,7 +1,16 @@
 .linkButton {
   @include text-sm;
+  color: $red;
+  cursor: pointer;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
   }
 }

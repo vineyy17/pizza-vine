@@ -13,9 +13,37 @@
   flex: 1;
 
   &--order {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    background-color: $white;
+  }
+
+  &--header {
+    width: 7rem;
+    background-color: $white;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    @include text-sm;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    border-radius: 9999px;
+    text-transform: capitalize;
+
+    @include media("<=tablet") {
+      width: 7rem;
+    }
+  }
+
+  &--header:focus {
+    width: 10rem;
+
+    @include media("<=tablet") {
+      width: 7rem;
+    }
   }
 
   @include media("<=tablet") {
