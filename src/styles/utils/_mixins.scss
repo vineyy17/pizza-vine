@@ -60,29 +60,8 @@
 @mixin text-sm {
   font-size: 1rem;
   line-height: 1.25rem;
-}
 
-@mixin backdrop-blur {
-  --backdrop-blur: blur(10px);
-  --backdrop-brightness: brightness(1.2);
-  --backdrop-contrast: contrast(1.1);
-  --backdrop-grayscale: grayscale(0.2);
-  --backdrop-hue-rotate: hue-rotate(30deg);
-  --backdrop-invert: invert(0.1);
-  --backdrop-opacity: opacity(0.8);
-  --backdrop-saturate: saturate(1.5);
-  --backdrop-sepia: sepia(0.2);
-
-  backdrop-filter: var(--backdrop-blur) var(--backdrop-brightness)
-    var(--backdrop-contrast) var(--backdrop-grayscale)
-    var(--backdrop-hue-rotate) var(--backdrop-invert) var(--backdrop-opacity)
-    var(--backdrop-saturate) var(--backdrop-sepia);
-}
-
-@mixin custom-space-x($space-x-reverse: 0) {
-  .space-x-2 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: #{$space-x-reverse};
-    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  @include media("<=tablet") {
+    font-size: 1.7rem;
   }
 }

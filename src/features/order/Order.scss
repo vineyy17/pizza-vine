@@ -5,13 +5,15 @@
   padding-bottom: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 48rem;
+  max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
 
   @include media("<=tablet") {
     padding-top: 15rem;
-    width: 68rem;
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   &__status {
@@ -25,6 +27,10 @@
       font-size: 1.25rem;
       line-height: 1.75rem;
       font-weight: 600;
+
+      @include media("<=tablet") {
+        font-size: 3rem;
+      }
     }
 
     &__state {
@@ -44,6 +50,10 @@
       text-transform: uppercase;
       letter-spacing: 0.025em;
       color: $white;
+
+      @include media("<=tablet") {
+        padding: 1rem 2rem;
+      }
     }
 
     &__action {
@@ -58,6 +68,10 @@
       text-transform: uppercase;
       letter-spacing: 0.025em;
       color: $white;
+
+      @include media("<=tablet") {
+        padding: 1rem 2rem;
+      }
     }
   }
 
@@ -77,17 +91,29 @@
 
     &__minutes {
       font-weight: 500;
+
+      @include media("<=tablet") {
+        font-size: 2.5rem;
+      }
     }
 
     &__date {
       font-size: 1rem;
       line-height: 1rem;
+
+      @include media("<=tablet") {
+        font-size: 1.5rem;
+      }
     }
   }
 
   &__list {
     border-bottom-width: 1px;
     border-top-width: 1px;
+
+    @include media("<=tablet") {
+      margin-top: 3rem;
+    }
   }
 
   &__price {

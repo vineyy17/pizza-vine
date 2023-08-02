@@ -8,8 +8,7 @@
   }
 
   &__qty {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+    @include text-sm;
     font-weight: 500;
   }
 }

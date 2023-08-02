@@ -4,10 +4,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgba($red, 0.2);
+  border-bottom: 1px solid rgba($red, 0.2);
+
+  @include media("<=tablet") {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 1rem;
+  }
 
   &__name {
-    margin-bottom: 0;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+
+    @include media("<=tablet") {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   }
 
   &__update {
@@ -15,6 +28,11 @@
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+
+    @include media("<=tablet") {
+      justify-content: space-between;
+      width: 100%;
+    }
 
     &__price {
       @include text-sm;

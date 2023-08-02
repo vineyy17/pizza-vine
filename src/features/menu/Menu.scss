@@ -1,11 +1,17 @@
 .menu {
-  //   @include divide-y;
-  //   @include divide-stone-200;
   padding-top: 7.5rem;
   padding-bottom: 0.5rem;
   color: $red;
-  //   overflow: scroll;
   margin-left: auto;
   margin-right: auto;
   max-width: 48rem;
+
+  @include media("<=tablet") {
+    padding-top: 11.5rem;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }

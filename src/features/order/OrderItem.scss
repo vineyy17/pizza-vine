@@ -11,6 +11,10 @@
     font-size: 1.2rem;
     line-height: 1.25rem;
 
+    @include media("<=tablet") {
+      font-size: 2rem;
+    }
+
     &__qty {
       font-weight: 700;
     }
@@ -24,6 +28,11 @@
       line-height: 1.25rem;
       text-transform: capitalize;
       font-style: italic;
+
+      @include media("<=tablet") {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+      }
     }
   }
 }

@@ -2,13 +2,13 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
 import { clearCart, getCart, getTotalCartPrice } from "../cart/cartSlice";
-import EmptyCart from "../cart/EmptyCart";
 import { formatCurrency } from "../../utils/helpers";
+import { createOrder } from "../../services/apiRestaurant";
+import EmptyCart from "../cart/EmptyCart";
+import Button from "../../ui/Button/Button";
+import store from "../../store";
 import "./CreateOrder.scss";
 import "../../styles/shared/_input.scss";
-import Button from "../../ui/Button/Button";
-import { createOrder } from "../../services/apiRestaurant";
-import store from "../../store";
 
 const isValidPhone = (str) =>
   /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
@@ -33,7 +33,7 @@ function CreateOrder() {
     <div className="orderForm">
       <h2 className="orderForm__text">Ready to place an order? Let's go!</h2>
 
-      <Form method="POST">
+      <Form method="POST" className="orderForm__form">
         <div className="orderForm__nameInput">
           <label className="orderForm__nameInput__label">First Name</label>
           <input
