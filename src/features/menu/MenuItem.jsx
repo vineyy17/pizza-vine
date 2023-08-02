@@ -3,8 +3,8 @@ import { formatCurrency } from "../../utils/helpers";
 import { addItem, getCurrentQuantityById } from "../cart/cartSlice";
 import DeleteItem from "../cart/DeleteItem";
 import UpdateItemQuantity from "../cart/UpdateItemQuantity";
-import "./MenuItem.scss";
 import Button from "../../ui/Button/Button";
+import "./MenuItem.scss";
 
 function MenuItem({ pizza }) {
   const dispatch = useDispatch();

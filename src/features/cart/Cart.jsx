@@ -3,8 +3,8 @@ import { clearCart, getCart } from "./cartSlice";
 import EmptyCart from "./EmptyCart";
 import LinkButton from "../../ui/LinkButton/LinkButton";
 import CartItem from "./CartItem";
-import "./Cart.scss";
 import Button from "../../ui/Button/Button";
+import "./Cart.scss";
 
 function Cart() {
   const cart = useSelector(getCart);

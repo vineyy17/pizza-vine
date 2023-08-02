@@ -14,7 +14,7 @@ function Header() {
       <nav className="nav">
         <div className="nav__about">
           <SLink to="about" smooth={true}>
-            About
+            <Link to="/">About</Link>
           </SLink>
         </div>
 
@@ -37,7 +37,9 @@ function Header() {
         </div>
 
         <SLink to="footer-section" smooth={true}>
-          <Button type="nav">Contact us</Button>
+          <Button type="nav" to="/">
+            Contact us
+          </Button>
         </SLink>
       </nav>
     </div>

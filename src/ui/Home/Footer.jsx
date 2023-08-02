@@ -1,9 +1,9 @@
 import { Form } from "react-router-dom";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
-import "./Footer.scss";
+import { useState } from "react";
 import useBackgroundImage from "../../hooks/useBackgroundImage";
 import Button from "../Button/Button";
-import { useState } from "react";
+import "./Footer.scss";
 
 function Footer() {
   const [submitted, setSubmitted] = useState(false);
