@@ -2,14 +2,17 @@
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 8rem;
-  padding-bottom: 8rem;
   color: $red;
-  width: 48rem;
+  max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
 
   &__text {
     margin-top: 1.75rem;
     font-weight: 600;
+  }
+
+  @include media("<tablet") {
+    padding-top: 10rem;
   }
 }

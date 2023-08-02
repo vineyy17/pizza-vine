@@ -16,6 +16,12 @@
     padding-right: 2rem;
   }
 
+  @include media("<=phone") {
+    padding-top: 12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   &__status {
     display: flex;
     flex-wrap: wrap;
@@ -31,11 +37,20 @@
       @include media("<=tablet") {
         font-size: 3rem;
       }
+
+      @include media("<=phone") {
+        font-size: 2rem;
+      }
     }
 
     &__state {
       display: flex;
       gap: 0.5rem;
+
+      @include media("<=phone") {
+        padding-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
     }
 
     &__priority {
@@ -54,6 +69,10 @@
       @include media("<=tablet") {
         padding: 1rem 2rem;
       }
+
+      @include media("<=phone") {
+        padding: 0.5rem 1rem;
+      }
     }
 
     &__action {
@@ -71,6 +90,10 @@
 
       @include media("<=tablet") {
         padding: 1rem 2rem;
+      }
+
+      @include media("<=phone") {
+        padding: 0.5rem 1rem;
       }
     }
   }
@@ -94,20 +117,36 @@
       padding-right: 2rem;
     }
 
+    @include media("<=tablet") {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
     &__minutes {
       font-weight: 500;
 
       @include media("<=tablet") {
         font-size: 2.7rem;
       }
+
+      @include media("<=phone") {
+        font-size: 1.8rem;
+        padding-top: 0.5rem;
+      }
     }
 
     &__date {
       font-size: 1rem;
       line-height: 1rem;
+      @include text-stone-500;
 
       @include media("<=tablet") {
         font-size: 1.7rem;
+      }
+
+      @include media("<=phone") {
+        font-size: 1.2rem;
+        padding-top: 0.5rem;
       }
     }
   }
@@ -145,6 +184,10 @@
         font-size: 2rem;
         padding-bottom: 1rem;
       }
+
+      @include media("<=tablet") {
+        font-size: 1.8rem;
+      }
     }
 
     &__priority {
@@ -155,12 +198,20 @@
       @include media("<=tablet") {
         font-size: 2rem;
         padding-bottom: 1rem;
-        padding-top: 0.7rem;
+        padding-top: 0.5rem;
+      }
+
+      @include media("<=tablet") {
+        font-size: 1.8rem;
       }
     }
 
     &__total {
       font-weight: 700;
+
+      @include media("<=tablet") {
+        font-size: 2rem;
+      }
     }
   }
 }

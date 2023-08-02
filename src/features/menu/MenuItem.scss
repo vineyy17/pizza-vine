@@ -9,7 +9,7 @@
     height: 8rem;
     border-radius: 5px;
 
-    @include media("<=tablet") {
+    @include media("<=tablet", ">phone") {
       height: 12rem;
     }
 

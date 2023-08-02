@@ -78,8 +78,12 @@
     font-weight: 300;
     padding: 0.5rem 1rem;
 
-    @include media("<=tablet") {
+    @include media("<=tablet", ">phone") {
       font-size: toRem(35);
+    }
+
+    @include media("<phone") {
+      font-size: toRem(20);
     }
   }
 
@@ -91,8 +95,12 @@
       font-size: toRem(15);
       font-weight: 300;
 
-      @include media("<=tablet") {
-        font-size: toRem(30);
+      @include media("<=tablet", ">phone") {
+        font-size: toRem(35);
+      }
+
+      @include media("<phone") {
+        font-size: toRem(20);
       }
     }
   }

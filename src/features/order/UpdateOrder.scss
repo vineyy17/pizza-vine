@@ -1,4 +1,8 @@
 .updateOrder {
   text-align: right;
   padding-top: 0.5rem;
+
+  @include media("<=tablet") {
+    padding-top: 1rem;
+  }
 }

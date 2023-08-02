@@ -31,7 +31,7 @@ function CreateOrder() {
 
   return (
     <div className="orderForm">
-      <h2 className="orderForm__text">Ready to place an order? Let's go!</h2>
+      <h2 className="orderForm__text">Ready to order? let's go!</h2>
 
       <Form method="POST" className="orderForm__form">
         <div className="orderForm__nameInput">
