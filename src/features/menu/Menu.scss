@@ -1,5 +1,5 @@
 .menu {
-  padding-top: 8.5rem;
+  padding-top: 7.5rem;
   padding-bottom: 0.5rem;
   color: $red;
   margin-left: auto;
@@ -18,5 +18,6 @@
   @include media("<phone") {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 8.5rem;
   }
 }

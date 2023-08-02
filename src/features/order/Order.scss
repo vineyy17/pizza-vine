@@ -175,6 +175,10 @@
       margin-top: 1rem;
     }
 
+    @include media("<=tablet") {
+      padding-left: 1rem;
+    }
+
     &__normal {
       font-size: 1rem;
       line-height: 1.25rem;
