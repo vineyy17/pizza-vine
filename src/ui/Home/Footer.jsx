@@ -3,8 +3,16 @@ import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
 import "./Footer.scss";
 import useBackgroundImage from "../../hooks/useBackgroundImage";
 import Button from "../Button/Button";
+import { useState } from "react";
 
 function Footer() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
+
   const backgroundImageUrl =
     "https://images.pexels.com/photos/7886785/pexels-photo-7886785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
 
@@ -18,30 +26,56 @@ function Footer() {
         </h1>
       </div>
 
-      <Form className="footer__form">
-        <input
-          className="footer__form__input"
-          type="text"
-          placeholder="full name"
-          required
-        />
+      {!submitted ? (
+        <Form className="footer__form" onSubmit={handleSubmit}>
+          <input
+            className="footer__form__input"
+            type="text"
+            placeholder="full name"
+            required
+          />
 
-        <input
-          className="footer__form__input"
-          type="email"
-          placeholder="email address"
-          required
-        />
+          <input
+            className="footer__form__input"
+            type="email"
+            placeholder="email address"
+            required
+          />
 
-        <Button type="footer">Sign up</Button>
-      </Form>
+          <Button type="footer">Sign up</Button>
+        </Form>
+      ) : (
+        <div className="footer__feedback">
+          <p className="footer__feedback__text">
+            Thank you! We will get in touch with you shortly.
+          </p>
+        </div>
+      )}
 
       <div className="footer__links">
         <div className="footer__links__social">
           <div className="footer__links__socials">
-            <FaTwitter />
-            <FaLinkedin />
-            <FaInstagram />
+            <a
+              href="https://twitter.com/The_vine__"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/viney17"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.instagram.com/viney._"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
           </div>
 
           <p>PRIVACY POLICY</p>

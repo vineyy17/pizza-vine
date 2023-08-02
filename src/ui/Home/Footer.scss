@@ -175,6 +175,24 @@
       color: #819388;
     }
   }
+
+  &__feedback {
+    background-color: $red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin: toRem(50);
+    border-radius: 5px;
+
+    &__text {
+      color: $white;
+      font-family: $font-apfel-g;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
 }
 
 .footer::after {
