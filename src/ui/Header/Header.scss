@@ -18,6 +18,7 @@
 
   @include media("<=phone") {
     padding: 1rem;
+    padding-bottom: 0.8rem;
   }
 }
 
@@ -77,6 +78,10 @@
       border: 0;
       aspect-ratio: 1;
       cursor: pointer;
+    }
+
+    @include media("<=phone") {
+      width: 2rem;
     }
   }
 

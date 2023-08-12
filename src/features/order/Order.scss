@@ -17,7 +17,7 @@
   }
 
   @include media("<=phone") {
-    padding-top: 10rem;
+    padding-top: 9rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -179,21 +179,7 @@
       padding-left: 1rem;
     }
 
-    &__normal {
-      font-size: 1rem;
-      line-height: 1.25rem;
-      font-weight: 500;
-
-      @include media("<=tablet") {
-        font-size: 2rem;
-        padding-bottom: 1rem;
-      }
-
-      @include media("<=tablet") {
-        font-size: 1.8rem;
-      }
-    }
-
+    &__normal,
     &__priority {
       font-size: 1rem;
       line-height: 1.25rem;
@@ -202,11 +188,10 @@
       @include media("<=tablet") {
         font-size: 2rem;
         padding-bottom: 1rem;
-        padding-top: 0.5rem;
       }
 
-      @include media("<=tablet") {
-        font-size: 1.8rem;
+      @include media("<=phone") {
+        font-size: 1.7rem;
       }
     }
 
@@ -215,6 +200,10 @@
 
       @include media("<=tablet") {
         font-size: 2rem;
+      }
+
+      @include media("<=tablet") {
+        font-size: 1.7rem;
       }
     }
   }
