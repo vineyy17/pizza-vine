@@ -16,7 +16,8 @@
     padding-right: 2rem;
   }
 
-  @include media("<=tablet") {
+  @include media("<=phone") {
+    padding-top: 10rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -98,6 +99,11 @@
       @include media("<=tablet") {
         font-size: 2rem;
         padding: 1rem;
+      }
+
+      @include media("<=phone") {
+        font-size: 1.2rem;
+        line-height: 1;
       }
     }
   }

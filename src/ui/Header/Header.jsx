@@ -4,22 +4,81 @@ import "./Header.scss";
 import Button from "../Button/Button";
 import { useSelector } from "react-redux";
 import { getTotalCartQuantity } from "../../features/cart/cartSlice";
-import SearchOrder from "../../features/order/SearchOrder";
+import { useEffect, useState } from "react";
 
 function Header() {
   const totalCartQuantity = useSelector(getTotalCartQuantity);
 
+  const [isNavVisible, setIsNavVisible] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavVisible((prevIsNavVisible) => !prevIsNavVisible);
+  };
+
+  const closeNav = () => {
+    setIsNavVisible(false);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      let resizeTimer;
+      document.body.classList.add("resize-animation-stopper");
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        document.body.classList.remove("resize-animation-stopper");
+      }, 400);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="header">
       <nav className="nav">
+        <button
+          className="nav__toggle"
+          aria-controls="primary-navigation"
+          aria-expanded={isNavVisible ? "true" : "false"}
+          onClick={toggleNav}
+        ></button>
+
+        <ul
+          id="primary-navigation"
+          className={`navigation ${isNavVisible ? "visible" : ""}`}
+        >
+          <li onClick={closeNav} className="navigation__about">
+            <Link to="/">
+              <span>About</span>
+            </Link>
+          </li>
+
+          <li onClick={closeNav} className="navigation__order">
+            <Link to="/menu">
+              <span>Order</span>
+            </Link>
+          </li>
+
+          <li onClick={closeNav} className="navigation__contact">
+            <Link to="/">
+              <span>Contact Us</span>
+            </Link>
+          </li>
+        </ul>
+
         <div className="nav__about">
           <SLink to="about" smooth={true}>
-            <Link to="/">About</Link>
+            <Link to="/">Contact Us</Link>
           </SLink>
         </div>
 
         <div className="nav__order">
-          <Link to="/menu">Order</Link>
+          <Link to="/menu">
+            <span>Order</span>
+          </Link>
         </div>
 
         <div className="nav__brand">
@@ -36,11 +95,13 @@ function Header() {
           </Link>
         </div>
 
-        <SLink to="footer-section" smooth={true}>
-          <Button type="nav" to="/">
-            Contact us
-          </Button>
-        </SLink>
+        <div className="nav__contact">
+          <SLink to="footer-section" smooth={true}>
+            <Button type="nav" to="/">
+              Contact us
+            </Button>
+          </SLink>
+        </div>
       </nav>
     </div>
   );

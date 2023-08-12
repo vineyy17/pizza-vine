@@ -11,12 +11,14 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, min-content);
   justify-content: center;
-  margin-top: toRem(110);
+  margin-top: toRem(80);
+  padding-top: 2rem;
 
   @include media("<=tablet") {
     height: 110rem;
-    margin-top: toRem(50);
+    margin-top: toRem(100);
     display: block;
+    padding-top: 0;
   }
 
   @include media("<=phone") {
