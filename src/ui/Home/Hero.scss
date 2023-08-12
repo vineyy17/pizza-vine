@@ -22,8 +22,12 @@
   }
 
   @include media("<=phone") {
-    margin-top: toRem(35);
+    margin-top: toRem(30);
     height: 120vh;
+  }
+
+  @include media("<=sm-phone") {
+    height: 100vh;
   }
 
   --mask: radial-gradient(

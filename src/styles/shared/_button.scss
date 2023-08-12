@@ -85,6 +85,10 @@
     @include media("<phone") {
       font-size: toRem(20);
     }
+
+    @include media("<=sm-phone") {
+      font-size: toRem(15);
+    }
   }
 
   &--addCart:hover {
@@ -102,6 +106,10 @@
       @include media("<phone") {
         font-size: toRem(20);
       }
+
+      @include media("<=sm-phone") {
+        font-size: toRem(15);
+      }
     }
   }
 
@@ -115,6 +123,10 @@
     @include media("<=tablet") {
       font-size: toRem(25);
     }
+
+    @include media("<=sm-phone") {
+      font-size: toRem(15);
+    }
   }
 
   &--round:hover {
@@ -127,6 +139,10 @@
 
       @include media("<=tablet") {
         font-size: toRem(25);
+      }
+
+      @include media("<=sm-phone") {
+        font-size: toRem(15);
       }
     }
   }

@@ -76,11 +76,11 @@ function Order() {
 
       <div className="order__price">
         <p className="order__price__normal">
-          Price pizza: {formatCurrency(orderPrice)}
+          Pizza price: {formatCurrency(orderPrice)}
         </p>
         {priority && (
           <p className="order__price__priority">
-            Price priority: {formatCurrency(priorityPrice)}
+            Priority price: {formatCurrency(priorityPrice)}
           </p>
         )}
         <p className="order__price__total">

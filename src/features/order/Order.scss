@@ -22,6 +22,10 @@
     padding-right: 1rem;
   }
 
+  @include media("<sm-phone") {
+    padding-top: 7rem;
+  }
+
   &__status {
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +44,10 @@
 
       @include media("<=phone") {
         font-size: 2rem;
+      }
+
+      @include media("<sm-phone") {
+        font-size: 1.8rem;
       }
     }
 
@@ -133,6 +141,10 @@
         font-size: 1.8rem;
         padding-top: 0.5rem;
       }
+
+      @include media("<sm-phone") {
+        font-size: 1.5rem;
+      }
     }
 
     &__date {
@@ -147,6 +159,10 @@
       @include media("<=phone") {
         font-size: 1.2rem;
         padding-top: 0.5rem;
+      }
+
+      @include media("<sm-phone") {
+        font-size: 1rem;
       }
     }
   }
@@ -175,7 +191,7 @@
       margin-top: 1rem;
     }
 
-    @include media("<=tablet") {
+    @include media("<=phone") {
       padding-left: 1rem;
     }
 
@@ -193,6 +209,11 @@
       @include media("<=phone") {
         font-size: 1.7rem;
       }
+
+      @include media("<sm-phone") {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
     }
 
     &__total {
@@ -202,8 +223,12 @@
         font-size: 2rem;
       }
 
-      @include media("<=tablet") {
+      @include media("<=phone") {
         font-size: 1.7rem;
+      }
+
+      @include media("<sm-phone") {
+        font-size: 1.5rem;
       }
     }
   }

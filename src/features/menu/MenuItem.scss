@@ -13,6 +13,10 @@
       height: 12rem;
     }
 
+    @include media("<=sm-phone") {
+      height: 6rem;
+    }
+
     &--soldOut {
       @include grayscale-effect;
     }

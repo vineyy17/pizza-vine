@@ -6,4 +6,8 @@
   background-color: $beige;
   color: $red;
   text-align: center;
+
+  @include media("<=tablet") {
+    width: 100%;
+  }
 }

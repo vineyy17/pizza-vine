@@ -45,6 +45,11 @@
 
     @include media("<=phone") {
       font-size: 2.5rem;
+      padding-left: 1rem;
+    }
+
+    @include media("<sm-phone") {
+      font-size: 2rem;
     }
   }
 
@@ -55,6 +60,10 @@
 
     @include media("<=phone") {
       font-size: 1.5rem;
+    }
+
+    @include media("<sm-phone") {
+      font-size: 1.2rem;
     }
   }
 
@@ -104,6 +113,7 @@
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 350ms ease-in;
+    cursor: pointer;
 
     font-size: toRem(100);
     font-family: $font-apfel-g;
@@ -114,6 +124,10 @@
 
   @include media("<=phone") {
     font-size: toRem(50);
+  }
+
+  @include media("<=sm-phone") {
+    font-size: toRem(30);
   }
 }
 

@@ -27,6 +27,8 @@
 
     @include media("<=tablet") {
       display: none;
+      opacity: 0;
+      visibility: hidden;
     }
 
     &__content {

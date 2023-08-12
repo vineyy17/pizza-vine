@@ -50,10 +50,10 @@ function Header() {
           id="primary-navigation"
           className={`navigation ${isNavVisible ? "visible" : ""}`}
         >
-          <li onClick={closeNav} className="navigation__about">
-            <Link to="/">
+          <li className="navigation__about">
+            <SLink to="about" smooth={true} onClick={closeNav}>
               <span>About</span>
-            </Link>
+            </SLink>
           </li>
 
           <li onClick={closeNav} className="navigation__order">
@@ -62,10 +62,10 @@ function Header() {
             </Link>
           </li>
 
-          <li onClick={closeNav} className="navigation__contact">
-            <Link to="/">
+          <li className="navigation__contact">
+            <SLink to="footer-section" smooth={true} onClick={closeNav}>
               <span>Contact Us</span>
-            </Link>
+            </SLink>
           </li>
         </ul>
 

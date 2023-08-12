@@ -13,6 +13,14 @@
   }
 
   @include media("<tablet") {
+    padding-top: 12rem;
+  }
+
+  @include media("<phone") {
     padding-top: 10rem;
+  }
+
+  @include media("<=sm-phone") {
+    padding-top: 7rem;
   }
 }
