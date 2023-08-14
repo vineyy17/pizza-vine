@@ -3,7 +3,6 @@ import AppLayout from "./ui/AppLayout/AppLayout";
 import Error from "./ui/Error/Error";
 import Menu, { loader as menuLoader } from "./features/menu/Menu";
 import Cart from "./features/cart/Cart";
-import Faq from "./features/faq/Faq";
 import Home from "./ui/Home/Home";
 import CreateOrder, {
   action as createOrderAction,
@@ -30,10 +29,6 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cart />,
-      },
-      {
-        path: "/faq",
-        element: <Faq />,
       },
       {
         path: "/order/new",

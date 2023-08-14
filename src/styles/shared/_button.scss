@@ -124,6 +124,10 @@
       font-size: toRem(35);
     }
 
+    @include media("<=phone") {
+      font-size: toRem(25);
+    }
+
     @include media("<=sm-phone") {
       font-size: toRem(15);
     }
@@ -139,6 +143,10 @@
 
       @include media("<=tablet") {
         font-size: toRem(35);
+      }
+
+      @include media("<=phone") {
+        font-size: toRem(25);
       }
 
       @include media("<=sm-phone") {
