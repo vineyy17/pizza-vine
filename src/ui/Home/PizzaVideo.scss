@@ -27,7 +27,6 @@
 
     @include media("<=tablet") {
       display: none;
-      z-index: -500;
     }
 
     &__content {
@@ -37,7 +36,6 @@
 
       @include media("<=tablet") {
         display: none;
-        z-index: -500;
       }
     }
   }
