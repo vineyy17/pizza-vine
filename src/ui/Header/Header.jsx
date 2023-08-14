@@ -50,6 +50,12 @@ function Header() {
           id="primary-navigation"
           className={`navigation ${isNavVisible ? "visible" : ""}`}
         >
+          <li onClick={closeNav} className="navigation__home">
+            <Link to="/">
+              <span>Home</span>
+            </Link>
+          </li>
+
           <li className="navigation__about">
             <SLink to="about" smooth={true} onClick={closeNav}>
               <span>About</span>
