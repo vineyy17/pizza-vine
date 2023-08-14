@@ -59,10 +59,6 @@
       font-size: 1.8rem;
     }
 
-    @include media("<phone") {
-      font-size: 1.8rem;
-    }
-
     @include media("<sm-phone") {
       font-size: 1.6rem;
     }
@@ -71,6 +67,6 @@
   &__action {
     margin-top: 1.5rem;
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }

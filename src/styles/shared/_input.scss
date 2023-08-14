@@ -9,7 +9,7 @@
   font-weight: 600;
   border-color: transparent;
   outline: none;
-  color: $red;
+  color: $v-black;
   flex: 1;
 
   &--order {
@@ -18,33 +18,6 @@
     padding-left: 7px;
     background-color: $white;
   }
-
-  // &--header {
-  //   width: 7rem;
-  //   background-color: $white;
-  //   padding-top: 0.3rem;
-  //   padding-bottom: 0.3rem;
-  //   padding-left: 0.5rem;
-  //   padding-right: 0.5rem;
-  //   @include text-sm;
-  //   transition-property: all;
-  //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  //   transition-duration: 300ms;
-  //   border-radius: 9999px;
-  //   text-transform: capitalize;
-
-  //   @include media("<=tablet") {
-  //     width: 7rem;
-  //   }
-  // }
-
-  // &--header:focus {
-  //   width: 10rem;
-
-  //   @include media("<=tablet") {
-  //     width: 7rem;
-  //   }
-  // }
 
   @include media("<=tablet") {
     padding-top: 10px;

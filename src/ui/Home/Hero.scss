@@ -22,7 +22,7 @@
   }
 
   @include media("<=phone") {
-    margin-top: toRem(25);
+    margin-top: toRem(20);
     height: 120vh;
   }
 
