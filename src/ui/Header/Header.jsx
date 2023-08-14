@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { Link as SLink } from "react-scroll";
-import "./Header.scss";
-import Button from "../Button/Button";
 import { useSelector } from "react-redux";
 import { getTotalCartQuantity } from "../../features/cart/cartSlice";
 import { useEffect, useState } from "react";
+import Button from "../Button/Button";
+import "./Header.scss";
 
 function Header() {
   const totalCartQuantity = useSelector(getTotalCartQuantity);

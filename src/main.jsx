@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./styles/main.scss";
+import { Provider } from "react-redux";
+
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
-import { Provider } from "react-redux";
+import "./styles/main.scss";
 import store from "./store.js";
 
 ReactDOM.createRoot(document.getElementById("root")).render(

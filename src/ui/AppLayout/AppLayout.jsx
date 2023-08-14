@@ -1,9 +1,9 @@
-import Header from "../Header/Header";
 import { Outlet, useNavigation } from "react-router-dom";
 import { split } from "../../animations/text";
 import { useEffect } from "react";
-import scroll from "../../animations/scroll";
 import Loader from "../Loader/Loader";
+import Header from "../Header/Header";
+import scroll from "../../animations/scroll";
 import "./AppLayout.scss";
 
 function AppLayout() {

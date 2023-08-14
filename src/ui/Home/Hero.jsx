@@ -1,8 +1,8 @@
-import "./Hero.scss";
+import { useNavigate } from "react-router-dom";
 import LogoSlider from "../LogoSlider/LogoSlider";
 import companyData from "../../data/companyData";
 import Button from "../Button/Button";
-import { useNavigate } from "react-router-dom";
+import "./Hero.scss";
 
 function Hero() {
   const navigate = useNavigate();
