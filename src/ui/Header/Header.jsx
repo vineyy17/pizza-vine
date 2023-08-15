@@ -77,7 +77,7 @@ function Header() {
 
         <div className="nav__about">
           <SLink to="about" smooth={true}>
-            <Link to="/">Contact Us</Link>
+            <Link to="/">About</Link>
           </SLink>
         </div>
 
