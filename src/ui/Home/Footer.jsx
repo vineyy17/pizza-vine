@@ -82,7 +82,9 @@ function Footer() {
         </div>
 
         <div className="footer__links__name">
-          <span>&copy; PIZZA VINE 2023</span> <span id="dash">|</span>{" "}
+          <span>&copy; PIZZA VINE 2023</span> 
+          
+{/*           <span id="dash">|</span>{" "} */}
 {/*           <a
             href="https://twitter.com/The_vine__"
             target="_blank"
