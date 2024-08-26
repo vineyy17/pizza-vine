@@ -1,18 +1,36 @@
-import { useNavigate } from "react-router-dom";
-import LogoSlider from "../LogoSlider/LogoSlider";
-import companyData from "../../data/companyData";
-import Button from "../Button/Button";
-import "./Hero.scss";
+import { useNavigate } from 'react-router-dom';
+import LogoSlider from '../LogoSlider/LogoSlider';
+import companyData from '../../data/companyData';
+import Button from '../Button/Button';
+import './Hero.scss';
+import gsap from 'gsap';
+import { useEffect, useRef } from 'react';
 
 function Hero() {
   const navigate = useNavigate();
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    const init = () => {
+      tl.from(containerRef.current, { ease: 'linear', autoAlpha: 0 }).to(
+        containerRef.current,
+        {
+          ease: 'linear',
+          autoAlpha: 1,
+        },
+      );
+    };
+
+    init();
+  }, []);
 
   function handleClick() {
-    navigate("/menu");
+    navigate('/menu');
   }
 
   return (
-    <div className="hero">
+    <div className="hero" ref={containerRef}>
       <div className="hero__feature">
         <div className="hero__feature__wrapper">
           <h1 className="hero__feature__header" data-animation="header">
