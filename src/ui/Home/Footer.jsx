@@ -1,9 +1,9 @@
-import { Form } from "react-router-dom";
-import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa6";
-import { useState } from "react";
-import useBackgroundImage from "../../hooks/useBackgroundImage";
-import Button from "../Button/Button";
-import "./Footer.scss";
+import { Form } from 'react-router-dom';
+import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa6';
+import { useState } from 'react';
+import useBackgroundImage from '../../hooks/useBackgroundImage';
+import Button from '../Button/Button';
+import './Footer.scss';
 
 function Footer() {
   const [submitted, setSubmitted] = useState(false);
@@ -14,9 +14,9 @@ function Footer() {
   };
 
   const backgroundImageUrl =
-    "https://images.pexels.com/photos/7886785/pexels-photo-7886785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
+    'https://images.pexels.com/photos/7886785/pexels-photo-7886785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2';
 
-  useBackgroundImage(backgroundImageUrl, "footer");
+  useBackgroundImage(backgroundImageUrl, 'footer');
 
   return (
     <div className="footer" id="footer-section">
@@ -82,16 +82,15 @@ function Footer() {
         </div>
 
         <div className="footer__links__name">
-          <span>&copy; PIZZA VINE 2023</span> 
-          
-          <span id="dash">|</span>{" "} 
-           <a
+          <span>&copy; PIZZA VINE 2024</span>
+          <span id="dash">|</span>{' '}
+          <a
             href="https://twitter.com/The_vine__"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span>DESIGNED AND DEVELOPED BY VINEY</span>
-          </a> 
+            <span>MADE WITH ❤️ BY VINEY</span>
+          </a>
         </div>
       </div>
     </div>
